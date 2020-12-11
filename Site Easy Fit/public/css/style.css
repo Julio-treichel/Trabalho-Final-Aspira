@@ -1,0 +1,352 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Header */
+
+header {
+    background: #000000; 
+    padding:0px 0px;
+    width: 100%;
+    position: static;
+    z-index: 9999;
+}
+
+header nav {
+    float: right; 
+    padding: 20px 200px;
+}
+
+header nav ul li {
+    list-style: none;
+    display: inline;
+    margin: 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: large;
+}
+
+header a img {
+    margin:0px 100px ;
+}
+
+figure img {
+    background-color: #202020;
+    display: block;
+    filter: blur(1px);
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+}
+
+/* sobre1 */
+
+.sobre1 {
+    background-color: #202020;
+    text-align: center;
+}
+
+.sobre1 article {
+    position: relative;
+}
+
+.sobre1 main article img {
+    width: 30%;
+    padding: 20px;
+}
+
+.sobre1 main article h1 {
+    color: white;
+    text-align: center;
+    padding: 120px 0px 30px 0px;
+    letter-spacing: 3px;
+    margin: 0 auto;
+}
+
+.sobre1 main article h2 {
+    color: white;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    letter-spacing: 3px;
+    margin: 0 auto;
+}
+
+.sobre1 main article h3 {
+    color: white;
+    text-align: center;
+    padding: 5px 0px 10px 0px;
+    letter-spacing: 3px;
+    margin: 0 auto;
+}
+
+.sobre1 main article p {
+    color: white;
+    width: 50%;
+    font-size: 18px;
+    text-align: justify;
+    letter-spacing: 2px;
+    padding: 0px 0px 0px 0px;
+    margin: 0 auto;
+}
+
+.sobre1 main article a {
+    color: white;
+    width: 50%;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 0px 0px 0px 0px;
+    margin: 0 auto;
+}
+
+.img1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img1 img {
+    width: 30%;
+    padding: 40px 10px 10px 10px;
+}
+
+
+/* class .coteiner*/
+
+.conteiner{
+    background-color: #202020;
+    text-align: center;
+    padding: 30px 10px 10px 10px;
+}
+
+.conteiner main article p {
+    color: white;
+    text-align: justify, center;
+}
+
+.conteiner main article img {
+    width: 3%;
+    padding: 10px;
+}
+
+.conteiner main article h1 {
+    color: white;
+    text-align: center;
+    padding: 50px 0px 1px 0px;
+    letter-spacing: 2px;
+}
+
+.conteiner main article h2 {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding: 50px 0px 30px 0px;
+    letter-spacing: 4px;
+}
+
+.conteiner main article a img {
+    width: 7%;
+}
+
+/* class .imagens*/
+
+.imagens {
+  background-color: #202020;
+  margin: 0px auto;
+  padding: 0px;
+}
+
+.imagens article{
+ margin: 10px;
+ position: relative;
+}
+
+.imagens main {
+    display: grid;
+    grid-template-columns: 30% 30% 0%;
+    margin-left: 28%;
+}
+
+.imagens article img {
+    filter: blur(2px);
+	transition: filter 0.9s;
+    width: 100%;
+}
+.imagens article img:hover {
+    filter: blur(0px);
+}
+
+.btn {
+    background-color: #ffb612;
+    color: black;
+    padding: 10px;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font: small;
+}
+.btn2 {
+    background-color: #ffb612;
+    color: black;
+    padding: 10px;
+    width: 30%;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font: small;
+    margin-left: 35%;
+}
+
+/* conteriner2 */
+
+.conteiner2 {
+    background-color: #202020;
+}
+
+.conteiner2 main article h1 {
+    color: white;
+    text-align: center;
+    padding: 80px 0px 30px 0px;
+    letter-spacing: 2px;
+}
+
+.conteiner2 main article h2 {
+    color: white;
+    text-align: justify;
+    padding: 0px 20%;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+
+.conteiner2 main article h3 {
+    color: white;
+    text-align: center;
+    padding: 40px 0px 30px 0px;
+    letter-spacing: 2px; 
+    
+}
+
+
+/* footer */
+
+footer {
+    background-color: #333;
+	color: #fff;
+    padding: 25px;
+    left: 20px;
+    letter-spacing: 1px;
+    font-size: large;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/* Form calculadora */
+
+.custom-input{
+    color: blue;
+}
+
+.f {
+    background-color: #202020;
+}
+
+form {
+    padding: 2rem;
+    text-align: center;
+    border: 1px solid white;
+    width: 40%;
+    margin: auto;
+
+}
+
+form h1 {
+    color: white;
+    text-align: center;
+    padding: 0px 0px 20px 0px;
+    letter-spacing: 2px;
+    
+}
+
+form input {
+    outline: none;
+    margin-bottom: 10px;
+    
+}
+
+#mensagem {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 0px;
+    padding: 10px;
+    color:white;
+    font-size: large;
+}
+form button {
+    background-color: #ffb612;
+    color: black;
+    padding: 10px;
+    width: 38%;
+    display: block;
+    border-radius: 50px;
+    margin: auto;
+    font-size: large;
+}
+
+#altura_input1 {
+    padding: 10px;
+    color: black;
+    font-size: medium;
+    border-radius: 15px;
+}
+
+#peso_input2 {
+    padding: 10px;
+    color: black;
+    font-size: medium;
+    border-radius: 15px;
+}
+
+::placeholder {
+    color: black;
+    font-size: large;
+}
+
+#nome_input1 {
+    padding: 10px 30px;
+    color: black;
+    font-size: medium;
+    border-radius: 15px;
+}
+
+#email_input2 {
+    padding: 10px 30px;
+    color: black;
+    font-size: medium;
+    border-radius: 15px;
+}
+
+#telefone_input3 {
+    padding: 10px 30px;
+    color: black;
+    font-size: medium;
+    border-radius: 15px;
+}
+
+#menu {
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px;
+    float: right;
+    margin: 10px 30px;
+    display: none;
+}

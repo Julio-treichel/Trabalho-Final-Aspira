@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/11/03 19:14:45.000.685,=C:\Users\opc\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/12/09 22:45:59.000.237,=C:\Users\opc\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/12/10 00:06:43.000.302,C:\Users\opc\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Aspira\delphiAppDef\Unit1.pas</Transaction>
+    <Transaction>2020/12/10 00:06:43.000.302,C:\Users\opc\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Aspira\delphiAppDef\Unit1.dfm</Transaction>
+    <Transaction>2020/12/10 00:06:54.000.614,C:\Users\opc\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Aspira\delphiAppDef\Project1.dproj</Transaction>
+    <Transaction>2020/12/10 02:17:32.000.540,=C:\Aspira\delphiAppDef\Unit2.pas</Transaction>
+    <Transaction>2020/12/10 02:18:17.000.931,C:\Aspira\delphiAppDef\ULogin.pas=C:\Aspira\delphiAppDef\Unit2.pas</Transaction>
+    <Transaction>2020/12/10 02:22:18.000.675,=C:\Aspira\delphiAppDef\Unit2.pas</Transaction>
+    <Transaction>2020/12/10 02:32:04.000.534,=C:\Aspira\delphiAppDef\Unit2.pas</Transaction>
+    <Transaction>2020/12/10 02:49:11.000.322,C:\Aspira\delphiAppDef\Uloginpas.dfm=C:\Aspira\delphiAppDef\Unit2.dfm</Transaction>
+    <Transaction>2020/12/10 02:49:11.000.322,C:\Aspira\delphiAppDef\Uloginpas.pas=C:\Aspira\delphiAppDef\Unit2.pas</Transaction>
+    <Transaction>2020/12/10 18:14:45.000.305,=C:\Aspira\delphiAppDef\Unit3.pas</Transaction>
+    <Transaction>2020/12/10 18:28:05.000.008,C:\Aspira\delphiAppDef\UCalculator.pas=C:\Aspira\delphiAppDef\Unit3.pas</Transaction>
+    <Transaction>2020/12/10 18:28:05.000.008,C:\Aspira\delphiAppDef\UCalculator.dfm=C:\Aspira\delphiAppDef\Unit3.dfm</Transaction>
+    <Transaction>2020/12/10 18:37:45.000.050,=C:\Aspira\delphiAppDef\Unit3.pas</Transaction>
+    <Transaction>2020/12/10 18:41:53.000.508,=C:\Aspira\delphiAppDef\Unit3.pas</Transaction>
+    <Transaction>2020/12/10 18:55:54.000.102,C:\Aspira\delphiAppDef\Unit3.pas=C:\Aspira\delphiAppDef\UCalculator.pas</Transaction>
+    <Transaction>2020/12/10 18:55:54.000.102,C:\Aspira\delphiAppDef\Unit3.dfm=C:\Aspira\delphiAppDef\UCalculator.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

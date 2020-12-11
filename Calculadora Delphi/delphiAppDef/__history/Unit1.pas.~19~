@@ -1,0 +1,124 @@
+unit Unit1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, System.IOUtils, FireDAC.Stan.Intf,
+  FireDAC.Stan.Option, FireDAC.Stan.Error, FireDAC.UI.Intf, FireDAC.Phys.Intf,
+  FireDAC.Stan.Def, FireDAC.Stan.Pool, FireDAC.Stan.Async, FireDAC.Phys,
+  FireDAC.Phys.SQLite, FireDAC.Phys.SQLiteDef, FireDAC.Stan.ExprFuncs,
+  FireDAC.Stan.Param, FireDAC.DatS, FireDAC.DApt.Intf, FireDAC.DApt,
+  FireDAC.Phys.SQLiteWrapper.Stat, FireDAC.VCLUI.Wait, System.Rtti,
+  System.Bindings.Outputs, Vcl.Bind.Editors, Data.Bind.EngExt,
+  Vcl.Bind.DBEngExt, Data.Bind.Components, Data.Bind.DBScope, Data.DB,
+  FireDAC.Comp.UI, Vcl.StdCtrls, Vcl.ExtCtrls, FireDAC.Comp.DataSet,
+  FireDAC.Comp.Client, Vcl.Imaging.jpeg;
+
+type
+  TForm1 = class(TForm)
+    FDConnection: TFDConnection;
+    qrUsers: TFDQuery;
+    pnl_register: TPanel;
+    Label1: TLabel;
+    edt_name: TEdit;
+    Label2: TLabel;
+    edt_email: TEdit;
+    Label3: TLabel;
+    edt_pass: TEdit;
+    Label4: TLabel;
+    edt_confirm: TEdit;
+    btn_register: TButton;
+    FDPhysSQLiteDriverLink1: TFDPhysSQLiteDriverLink;
+    FDGUIxWaitCursor1: TFDGUIxWaitCursor;
+    qrUsersid: TIntegerField;
+    qrUsersemail: TStringField;
+    qrUserspassword: TStringField;
+    qrUsersname: TStringField;
+    BindSourceDB1: TBindSourceDB;
+    BindingsList1: TBindingsList;
+    LinkControlToField1: TLinkControlToField;
+    LinkControlToField2: TLinkControlToField;
+    LinkControlToField3: TLinkControlToField;
+    Image1: TImage;
+    Memo1: TMemo;
+    procedure FormActivate(Sender: TObject);
+    procedure btn_registerClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+uses Uloginpas, UCalculator;
+
+procedure TForm1.btn_registerClick(Sender: TObject);
+begin
+   if(edt_name.Text = '') then
+begin
+  ShowMessage('Insira seu Nome!');
+  edt_name.SetFocus;
+  Abort;
+end;
+   if(edt_email.Text = '') then
+begin
+  ShowMessage('Insira seu email!');
+  edt_email.SetFocus;
+  Abort;
+end;
+
+  if (edt_pass.Text = '') then
+begin
+  ShowMessage('Insira sua senha!');
+  edt_pass.SetFocus;
+  Abort;
+end;
+
+  if (edt_confirm.Text = '') then
+begin
+  ShowMessage('Confirme sua senha!');
+  edt_confirm.SetFocus;
+  Abort;
+end;
+
+  if (edt_pass.Text <> edt_confirm.Text) then
+begin
+  ShowMessage('A confirmação de senha está incorreta!');
+  edt_confirm.SetFocus;
+  Abort;
+end;
+
+  qrUsers.Append;
+  ShowMessage('Cadastro Concluido!');
+  Form3.Showmodal;
+  form1.Hide;
+  form1.Close;
+  edt_name.Clear;
+  edt_email.Clear;
+  edt_pass.Clear;
+  edt_confirm.Clear;
+
+end;
+
+procedure TForm1.FormActivate(Sender: TObject);
+begin
+  FDConnection.Connected := False;
+try
+  {$IF DEFINED (IOS) OR DEFINED (ANDROID) }
+  FDConnection.Params.Values['DATABASE'] := TPath.Combine(TPath.GetDocumentsPath, 'dbRegister.db');
+  {$ENDIF}
+  except on E: Exception do
+
+  ShowMessage(e.Message);
+end;
+qrUsers.Open();
+end;
+
+end.

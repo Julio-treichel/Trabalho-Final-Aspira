@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+        
+    <title>Easy Fit</title>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/media.css">
+    <link rel="shortcut icon" type="image/png" href="./image2/icone.png">
+    <script src="https://kit.fontawesome.com/b41a55bed2.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+</head>
+<body>
+    <header>
+
+        <a href="index.html" title="Pagina inicial">
+            <img src="./image2/logo.png" title="Logo" alt="logo">
+        </a>
+
+        <a href="#" id="menu">
+            <i class="fas fa-bars"></i>
+        </a>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="imc.html" title="Sobre" alt="Sobre" >CALCULADORA</a>
+                </li>
+    
+                <li>
+                    <a href="localizacao.html" title="Localização" alt="Localização">LOCALIZACAO</a>
+                </li>
+
+                <li>
+                    <a href="planos.html" title="Contato" alt="Contatos" >PLANOS</a>
+                </li>
+
+                <li>
+                    <a href="cadastrop.html" title="Cadastro" alt="Cadastro">
+                        <i class="fas fa-user-plus"></i>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+    <figure>
+        <img src="./image2/avl.png">
+    </figure>
+    
+    <div class="conteiner">
+        <main>
+            <article>
+                <h1>Faça o calculo do seu aluno</h1>
+                <h2>Realize os calculos IMC e informe ao seu aluno como anda seu progesso.</h2>
+            </article>
+        </main>
+    </div>
+
+    <div class="f">
+        <form>
+            <h1>Calculadora IMC</h1>
+            <input id="altura_input1" placeholder="Informe sua altura:"><br>
+            <input id="peso_input2" placeholder="Informe seu peso: "><br>
+            <button>CALCULAR IMC</button>
+            <p id="mensagem"></p>
+        </form>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <footer>
+        <div class="foo">
+            <p>
+                Equipe EasyFit 2020
+            </p>
+        </div>
+    </footer>
+
+    <script src="./maks.js"></script>
+    <script src='./calculadora_imc.js' type="module"></script>
+
+    <script type="text/javascript">
+    
+        document.querySelector('#menu').onclick = function() {
+    
+            document.querySelector('header nav').classList.toggle('show');}
+    </script>
+
+</body>
+</html>

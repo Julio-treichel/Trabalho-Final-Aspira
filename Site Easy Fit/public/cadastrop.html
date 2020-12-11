@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Easy Fit</title>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/media.css">
+    <link rel="shortcut icon" type="image/png" href="./image2/icone.png">
+    <script src="https://kit.fontawesome.com/b41a55bed2.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+</head>
+<body>
+    <header>
+
+        <a href="index.html" title="Pagina inicial">
+            <img src="./image2/logo.png" title="Logo" alt="logo">
+        </a>
+
+        <a href="#" id="menu">
+            <i class="fas fa-bars"></i>
+        </a>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="imc.html" title="Sobre" alt="Sobre" >CALCULADORA</a>
+                </li>
+    
+                <li>
+                    <a href="localizacao.html" title="Localização" alt="Localização">LOCALIZACAO</a>
+                </li>
+
+                <li>
+                    <a href="planos.html" title="Contato" alt="Contatos" >PLANOS</a>
+                </li>
+
+                <li>
+                    <a href="cadastrop.html" title="Cadastro" alt="Cadastro">
+                        <i class="fas fa-user-plus"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="conteiner">
+        <main>
+            <article>
+                <h1>Faça o seu cadastro em nosso site para ter acesso aos conteudos do nosso site.</h1>
+                <h2>Vai lá é rapido e pratico</h2>
+            </article>
+        </main>
+    </div>
+
+    <div class="f">
+        <form>
+            <input id="nome_input1" type="text" placeholder="Informe sua Nome: "><br>
+            <input id="email_input2" type="text" placeholder="Informe seu Email: "><br>
+            <input id="telefone_input3" type="text" placeholder="Informe seu Celular: "><br>
+            <button>Cadastrar</button>
+            <p id="mensagem"></p>
+         </form>
+    </div>
+
+    <div class="sobre1">
+        <main>
+            <article>
+                <a>Obrigado por fazer seu cadastro na Easy Fit Academia.</a>
+            </article>
+        </main>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <footer>
+        <div class="foo">
+            <p>
+                Equipe EasyFit 2020
+            </p>
+        </div>
+    </footer>
+
+    <script src="./cadastro.js" type="module"></script>
+    <script src="./maks.js"></script>
+    <script type="text/javascript">
+    
+        document.querySelector('#menu').onclick = function() {
+    
+            document.querySelector('header nav').classList.toggle('show');}
+    </script>
+</body>
+</html>

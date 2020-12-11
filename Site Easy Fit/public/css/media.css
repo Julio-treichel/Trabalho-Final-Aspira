@@ -1,0 +1,352 @@
+@media ( max-width: 440px ) {
+    html, body{
+        overflow-x: hidden; 
+    }
+
+    .conteiner {
+        width: 100%;
+    }
+    main {
+        width: 100%;
+        display: block;
+    }
+    article {
+        margin: 0px 0;
+    }
+    article p {
+        font-size: 20px;
+    }
+    aside {
+        margin: 20px 0 ;
+    }
+
+    header nav {
+        width: 100%;
+        display: none;
+        padding: 0px 20px;      
+    }
+
+    header nav ul li {
+        width: 100%;
+        display: block;
+        background-color: #333;
+        margin: 0 10px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    header a img {
+        margin:0px 20px ;
+    }
+
+    .imagens main {
+        display: grid;
+        grid-template-columns: 30% 30% 0%;
+        margin-left: 20%;
+    }
+
+    .sobre1 main article img {
+        width: 45%;
+        padding: 20px;
+    }
+
+    .imagens article img {
+        filter: blur(0px);
+        transition: filter 0.9s;
+        width: 110%;
+    }
+
+    form {
+        padding: 2rem;
+        text-align: center;
+        border: 1px solid white;
+        width: 60%;
+        margin: auto;
+    }
+
+    form button {
+        background-color: #ffb612;
+        color: black;
+        padding: 10px;
+        width: 65%;
+        display: block;
+        border-radius: 50px;
+        margin: auto;
+        font-size: large;
+    }
+
+    .conteiner main article iframe {
+        width: auto;
+    }
+
+    .sobre1 main article h1 {
+        padding: 10px;
+    }
+
+    .conteiner main article p {
+        margin: 5;
+    }
+
+    .conteiner main article h2 {
+        font-size: 18px;
+        letter-spacing: 4px;
+        padding: 20px;
+    }
+
+    .conteiner main article a img {
+        width: 15%;
+    }
+
+    .conteiner2 main article h3 a {
+        width: 35%;
+    }
+
+    #menu, .show {
+        display: block;
+    }
+}
+
+@media (min-width: 670px) and (max-width: 800px) {
+    html, body{
+        overflow-x: hidden; 
+    }
+
+    .conteiner {
+        width: 100%;
+    }
+    main {
+        width: 100%;
+    }
+    header a img {
+        margin: 0 20px ;
+    }
+    header nav {
+        display: none;
+        float: right; 
+        padding: 20px 0px;
+    }
+    .imagens main {
+        display: grid;
+        grid-template-columns: 30% 30% 0%;
+        margin-left: 20%;
+    }
+
+    form {
+        padding: 2rem;
+        text-align: center;
+        border: 1px solid white;
+        width: 60%;
+        margin: auto;
+    }
+
+    form button {
+        background-color: #ffb612;
+        color: black;
+        padding: 10px;
+        width: 25%;
+        display: block;
+        border-radius: 50px;
+        margin: auto;
+        font-size: large;
+    }
+
+    .conteiner main article iframe {
+        width: auto;
+    }
+
+    .conteiner main article h2 {
+        font-size: 18px;
+        letter-spacing: 4px;
+        padding: 100px;
+    }
+
+    .conteiner main article a img {
+        width: 10%;
+    }
+
+    #menu, .show {
+        display: block;
+    
+    }
+    
+}
+@media (min-width: 440.1px) and (max-width: 669px) {
+    html, body{
+        overflow-x: hidden; 
+    }
+
+    .conteiner {
+        width: 100%;
+    }
+    main {
+        width: 100%;
+        display: block;
+    }
+    article {
+        margin: 0px 0;
+    }
+    article p {
+        font-size: 20px;
+    }
+    aside {
+        margin: 20px 0 ;
+    }
+
+    header nav {
+        width: 100%;
+        display: none;
+        padding: 0px 20px;      
+    }
+
+    header nav ul li {
+        width: 100%;
+        display: block;
+        background-color: #333;
+        margin: 0 10px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    header a img {
+        margin:0px 20px ;
+    }
+
+    .imagens main {
+        display: grid;
+        grid-template-columns: 30% 30% 0%;
+        margin-left: 20%;
+    }
+
+    .sobre1 main article img {
+        width: 45%;
+        padding: 20px;
+    }
+
+    .imagens article img {
+        filter: blur(0px);
+        transition: filter 0.9s;
+        width: 110%;
+    }
+
+    form {
+        padding: 2rem;
+        text-align: center;
+        border: 1px solid white;
+        width: 60%;
+        margin: auto;
+    }
+
+    form button {
+        background-color: #ffb612;
+        color: black;
+        padding: 10px;
+        width: 50%;
+        display: block;
+        border-radius: 50px;
+        margin: auto;
+        font-size: large;
+    }
+
+    .conteiner main article iframe {
+        width: 80%;
+    }
+
+    .conteiner main article h2 {
+        font-size: 18px;
+        letter-spacing: 4px;
+        padding: 100px;
+    }
+
+    .conteiner main article a img {
+        width: 10%;
+    }
+
+    #menu, .show {
+        display: block;
+    }
+}
+
+@media (min-width: 670px) and (max-width: 900px) {
+    html, body{
+        overflow-x: hidden; 
+    }
+
+    .conteiner {
+        width: 100%;
+    }
+    main {
+        width: 100%;
+    }
+    header a img {
+        margin: 0 20px ;
+    }
+    header nav {
+        display: none;
+        float: right; 
+        padding: 20px 0px;
+    }
+    .imagens main {
+        display: grid;
+        grid-template-columns: 30% 30% 0%;
+        margin-left: 20%;
+    }
+
+    .sobre1 main article img {
+        width: 45%;
+        padding: 20px;
+    }
+
+    .imagens article img {
+        filter: blur(0px);
+        transition: filter 0.9s;
+        width: 110%;
+    }
+
+    form {
+        padding: 2rem;
+        text-align: center;
+        border: 1px solid white;
+        width: 60%;
+        margin: auto;
+    }
+
+    form button {
+        background-color: #ffb612;
+        color: black;
+        padding: 10px;
+        width: 35%;
+        display: block;
+        border-radius: 50px;
+        margin: auto;
+        font-size: large;
+    }
+
+    .conteiner main article iframe {
+        width: 80%;
+    }
+
+    .conteiner main article h2 {
+        font-size: 18px;
+        letter-spacing: 4px;
+        padding: 100px;
+    }
+
+    .conteiner main article a img {
+        width: 10%;
+    }
+
+    #menu, .show {
+        display: block;
+    
+    }
+    
+}
+@media (min-width: 901px) and (max-width: 1133px) {
+    header nav {
+        float: right; 
+        padding: 20px 140px;
+    }
+    header a img {
+        margin: 0px 40px ;
+    }
+}

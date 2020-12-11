@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!--Épou Sistemas para o desenvolvimento de um site contendo itens como Sobre a Academia, Estrutura da Academia (com fotos), Mapas de Localização e Contato-->
+    <title>Easy Fit</title>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/b41a55bed2.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="./css/media.css">
+        <link rel="shortcut icon" type="image/png" href="./image2/icone.png">
+        
+</head>
+<body>
+
+    <header>
+
+        <a href="index.html" title="Pagina inicial">
+            <img src="./image2/logo.png" title="Logo" alt="logo">
+        </a>
+
+        <a href="#" id="menu">
+            <i class="fas fa-bars"></i>
+        </a>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="imc.html" title="Sobre" alt="Sobre" >CALCULADORA</a>
+                </li>
+    
+                <li>
+                    <a href="localizacao.html" title="Localização" alt="Localização">LOCALIZACAO</a>
+                </li>
+
+                <li>
+                    <a href="planos.html" title="Contato" alt="Contatos" >PLANOS</a>
+                </li>
+
+                <li>
+                    <a href="cadastrop.html" title="Cadastro" alt="Cadastro">
+                        <i class="fas fa-user-plus"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <figure>
+        <img src="./image2/fundo1.png">
+    </figure>
+
+    <div class="sobre1">
+        <main>
+            <article>
+                <h1>Saiba mais sobre a Easy Fit</h1>
+                <P>A rede de academia Easy Fit foi criada no ano de 2018, foi construída diversas unidades pelo Brasil. O senhor Steve Jobson e o seu sócio William Gueites adquiriram 2 unidades, e decidiram fazer a instalação dessas unidades na região noroeste do Paraná, uma em Sarandi-PR e outra em Maringá-PR, com o objetivo de trazer o custo benefício para região.</P>
+                <div img class="img1">
+                    <img src="./image2/socios.jpg">
+                    
+                    </div>
+            </article>
+            
+            <article>
+                <h1>Os melhores equipamentos</h1>
+                <p>A Easy Fit possui uma enorme infraestrutura e equipamentos para um melhor desenvolvimento durante sua atividade física. Temos as melhores esteiras, elípticos e bicicletas ergométricas do mercado, temos também os melhores e avançados equipamentos de musculação do Brasil.</p>
+                <div img class="img1">
+                <img src="./image/2.jpg">
+                <img src="./image/7.jpg">
+                </div>
+            </article>
+
+            <article>
+                <h1>Conte com os melhores profissionais da região</h1>
+                <p>A Easy Fit tem o prazer de dizer que temos uma excelente equipe de profissionais da área da educação física para garantir que você tenha a melhor experiência dentro da nossa academia.</p>
+                <div img class="img1">
+                    <img src="./image/12.png">
+                    <img src="./image/11.png">
+                    </div>
+            </article>
+        </main>
+    </div>
+    
+    <div class="conteiner">
+        <main>
+            <article>
+                <h1>Conheca os planos da EasyFit Academia</h1>
+                <h2>Planos Funcionais, Musculação, Avaliações e Etc.</h2>
+            </article>
+        </main>
+    </div>
+
+    <div class="imagens">
+        <main>
+            <article>
+                <a href="./planos.html" title="Ver Plano">
+                <img src="./image2/fundo2f.png" alt="plano" title="Planos">
+                </a>
+                <a href="./planos.html" title="Ver Plano" class="btn">Ver Plano</a>
+            </article>
+
+            <article>
+                <a href="./planos.html" title="Ver Plano">
+                <img src="./image2/fundo3f.png" alt="plano" title="Planos">
+                </a>
+                <a href="./planos.html" title="Ver Plano" class="btn">Ver Plano</a>
+            </article>
+        </main>
+    </div>
+
+    <div class="conteiner2">
+        <main>
+              <article>
+                  <h1>
+                    Conheça nossa calculadora IMC.
+                  </h1>
+
+                  <h2>
+                    Ela é importante pois cria um padrão internacional de avaliação do grau de massa corporal das pessoas.
+                  </h2>
+
+                  <h2>
+                    Além disso, o cálculo desse índice é simples e rápido permitindo uma rápida noção superficial sobre seu corpo, possibilitando a percepção de problemas de saúde mais cedo.
+                  </h2>
+
+                  <h3>
+                      <a href="./imc.html" title="Calculadora IMC" class="btn2">Calcular</a>
+                  </h3>
+              </article>  
+        </main>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <footer>
+        <div class="foo">
+            <p>
+                Equipe EasyFit 2020
+            </p>
+        </div>
+    </footer>
+    <script type="text/javascript">
+    
+	document.querySelector('#menu').onclick = function() {
+
+        document.querySelector('header nav').classList.toggle('show');}
+        </script>
+</body>
+</html>

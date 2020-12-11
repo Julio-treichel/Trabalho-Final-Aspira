@@ -1,0 +1,107 @@
+object Form3: TForm3
+  Left = 0
+  Top = 0
+  Caption = 'Form3'
+  ClientHeight = 274
+  ClientWidth = 485
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 8
+    Top = 8
+    Width = 469
+    Height = 258
+    TabOrder = 0
+    object Image1: TImage
+      Left = 0
+      Top = 0
+      Width = 465
+      Height = 105
+    end
+    object Label1: TLabel
+      Left = 32
+      Top = 137
+      Width = 113
+      Height = 17
+      Caption = 'Digite a sua altura: '
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Nirmala UI'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label2: TLabel
+      Left = 296
+      Top = 137
+      Width = 114
+      Height = 17
+      Caption = 'Digite o seu peso:  '
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Nirmala UI'
+      Font.Style = []
+      ParentFont = False
+    end
+    object edt_height: TMaskEdit
+      Left = 32
+      Top = 152
+      Width = 120
+      Height = 21
+      EditMask = '!9.00;1;_'
+      MaxLength = 4
+      TabOrder = 0
+      Text = ' .  '
+    end
+    object edt_weight: TMaskEdit
+      Left = 296
+      Top = 152
+      Width = 120
+      Height = 21
+      EditMask = '!90.0;1;_'
+      MaxLength = 4
+      TabOrder = 1
+      Text = '  . '
+    end
+    object memo_result: TMemo
+      Left = 143
+      Top = 203
+      Width = 162
+      Height = 49
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Nirmala UI'
+      Font.Style = []
+      Lines.Strings = (
+        'memo_result')
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = False
+      TabOrder = 2
+    end
+    object btn_calculate: TButton
+      Left = 184
+      Top = 172
+      Width = 81
+      Height = 25
+      Caption = 'Calcular IMC'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Nirmala UI'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 3
+      OnClick = btn_calculateClick
+    end
+  end
+end
