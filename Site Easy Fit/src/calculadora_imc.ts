@@ -1,5 +1,3 @@
-import Dados from './entities/Dados.js'
-
 const altura = document.querySelector<HTMLInputElement>('#altura_input1')!
 const peso = document.querySelector<HTMLInputElement>('#peso_input2')!
 const result = document.querySelector<HTMLFormElement>('form')!
